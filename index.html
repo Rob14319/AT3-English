@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AT3 1st Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="heading"><p>Mobici BV offers the user unlimited access to play the HTML5 games<br>
+      Billing is done via the mobile phone bill Subscription -<br>
+      €3.99/week</p></div>
+    <div class="icon"><img src="img/hand.png" /></div>
+    <div class="tx2">
+      <p>
+        Enter your mobile phone number
+      </p>
+    </div>
+    <div class="inputn">
+      <div class="phoneicon"><img src="img/phoneasset.svg" alt="" /></div>
+      <input
+        class="inputph"
+        type="text"
+        placeholder="Phone Number"
+        id="inputField"
+        name="inputField"
+      />
+    </div>
+    <div id="errorMessage"></div>
+    <div class="downloadbtn">
+      <button
+        class="btndm"
+        id="redirectButton"
+        type="submit"
+        value="redirect"
+        onclick="return validateInput()"
+      >
+        Download Now
+      </button>
+    </div>
+    <div class="hrline"></div>
+    <div class="footer">
+      <p class="ftln1">After taking out the subscription to 247 games, the user gets the opportunity to play the HTML5 games. Price: €3.99 / week. Service provider: Mobici BV, Leopoldstraat 26, Turnhout, Belgium. The user can cancel their subscription at any time by calling the telephone hotline: 0800 - 10 02 99 or email support: 247games.at@silverlines.info. The user can independently manage/cancel the service directly via the "Subscription management" link.H3G/Orange users: cancel your subscription at www.drei.at/selfcare/restricted/prepareVasWapSSO.doA1 users: cancel your subscription at www.a1.net/meina1T-Mobile users: cancel your subscription at www.t-mobile.at/ payment services
+      </p>
+      <div class="links">
+        <ul>
+          <li><a href="#">Imprint</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Terms of use</a></li>
+          <li><a href="#">Subsciption Management </a></li>
+          <li><a href="#">Data Protection</a></li>
+          <li><a href="#">Right of Cancellation</a></li>
+          <li><a href="#">Faq</a></li>
+          <li><a href="#">Agb</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- <script>
+      document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("redirectButton").addEventListener("click");
+  });
+  function validateInput() {
+    let input = document.getElementById("inputField").value.trim();
+    if (input === "") {
+      alert("Please Enter your Phone Number to proceed.");
+    } else {
+      redirect();
+    }
+  }
+  function redirect() {
+    window.location.href = "secondpage.html";
+  }
+    </script> -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          document.getElementById("redirectButton").addEventListener("click", validateInput);
+      });
+
+      function validateInput() {
+          let input = document.getElementById("inputField").value.trim();
+          let errorMessageElement = document.getElementById("errorMessage");
+          if (input === "") {
+              errorMessageElement.textContent = "Please Enter your Phone Number to proceed.";
+            }
+             else if (isNaN(input)) {
+            errorMessageElement.textContent = "Enter your phone number in correct format";
+            }
+            else {
+              errorMessageElement.textContent = "";
+              redirect();
+            }
+      }
+
+      function redirect() {
+          window.location.href = "secondpage.html";
+      }
+  </script>
+  </body>
+  </html>

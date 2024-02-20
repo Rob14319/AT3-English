@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+span{
+    color: #00FF0A;
+}
+body{
+    background: linear-gradient(to right, #001C54,#A168FE);
+}
+.heading{
+    font-size: 1.25rem;
+    font-size: clamp(1.25rem, 1.15rem + 0.5vw, 1.75rem);
+    font-weight: 500;
+    margin-top: 4rem;
+    text-align: center;
+}
+.congo{
+    font-size: 1.25rem;
+    font-size: clamp(1.25rem, 1.15rem + 0.5vw, 1.75rem);
+    font-weight: 500;
+}
+.sms{
+    font-size: 1.125rem;
+    font-size: clamp(1.125rem, 1.05rem + 0.375vw, 1.5rem);
+}
+.ok{
+    font-size: 1.125rem;
+    font-size: clamp(1.125rem, 1.05rem + 0.375vw, 1.5rem);
+}
+.icon{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon img{
+    height: 30vh;
+}
+.sms{
+    margin-top: 4rem;
+    text-align: center;
+}
+.ok{
+    margin-top: 2rem;
+    text-align: center;
+}
+.hrline{
+    display: flex;
+    margin-top: 18rem;
+    height: 1px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white, rgba(255, 255, 255, 0));
+}
+.footer{
+    padding-top: 4rem;
+    background:  #14002D;
+    text-align: center;
+    justify-content: center;
+    font-size: 0.625rem;
+    font-size: clamp(0.625rem, 0.6rem + 0.125vw, 0.75rem);
+    word-wrap:break-word;
+    font-weight: 150;
+}
+.ftln1{
+    padding: 0 7vw 0 7vw;
+}
+ul li{
+    margin-right: 1rem;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.625rem;
+    font-size: clamp(0.625rem, 0.6rem + 0.125vw, 0.75rem);
+    font-weight: 200;
+    text-decoration: none;
+    padding-top: 1rem;
+}
+.links{
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.footer{
+    background: #14002D;
+}
