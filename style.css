@@ -6,11 +6,15 @@
     font-optical-sizing: auto;
     font-style: normal;
 }
+html{
+    height: 100%;
+}
 button{
     cursor: pointer;
 }
 body{
     background: linear-gradient(to right, #001C54,#A168FE);
+    height: 100%;
 }
 .heading{
     color: white;
